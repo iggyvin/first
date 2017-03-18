@@ -1,0 +1,630 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, a {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* ____________________________________________________________*/
+
+
+
+#abouts, #experience, #feature, #slider, #focus, #blog {
+    margin-bottom: 100px;
+}
+
+
+#header {
+	background: url('black.png') no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+	width: 100%;
+    height: 100%;
+}
+
+
+#nav {
+	background-color: #000000;
+	font-family: 'Dosis', sans-serif;
+	height: 40px;
+	opacity: 0.5;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 9999999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#nav ul {
+	font-size: 10px;
+	list-style-type: none;
+	margin-right: -50%;
+
+}
+
+#nav ul li {
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+#nav ul li a {
+    color: #ffffff;
+}
+
+#nav ul li a:active, #nav ul li  a:hover {
+    color: rgb(241, 101, 34);
+	transition: all 0.45s;
+	
+}
+
+#feature {
+    background-color: rgb(232, 235, 238);
+    height: 500px;
+    
+}
+
+h1 {
+    font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+}
+
+h2 {
+    font-size: 29px;
+    font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.text_banner {
+	font-family: sans-serif;
+	font-size: 10px;
+	line-height: 25px;
+	text-transform: none;
+}
+
+hr {
+	background-color: #ffffff;
+	border: #ffffff solid 1px;
+	height: 3px;
+	width: 45px;
+	margin-left: 0;
+}
+
+#banner {
+	padding: 200px 0;
+    align-items: center;
+    display:flex;
+}
+
+#logo {
+	padding-top: 40px;
+}
+
+#clients ul li {
+	display: inline;
+}
+
+#clients img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	filter: grayscale(100%);
+	margin-left: 12px;
+	
+}
+
+#clients img:hover {
+	-moz-filter: grayscale(50%);
+	-ms-filter: grayscale(50%);
+	-o-filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+
+#clients {
+	height: 100px;
+}
+
+#abouts {
+	background: url('bck_head.png') no-repeat;
+	background-size: cover;
+    display:flex;
+    align-items:center;
+    height: 500px;
+}
+
+#abouts .col-one-two:first-child {
+	align-items: flex-end;
+	justify-content: center;
+	display: flex;
+	
+}
+
+#footer {
+	background-color: rgb(232, 235, 238);
+	height: 219px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.col-one-two {
+    float: left;
+    width: 50%;
+}
+
+#feature .title {
+    height: 500px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+}
+
+#experience .container {
+    display: table;
+}
+
+
+#focus .title {
+    height: 151px;
+    margin: 6px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#focus .container {
+    display: table;
+}
+
+.col-one-in-two p {
+    align-items: center;
+    border: 1px solid rgb(232, 235, 238);
+    display: flex;
+    height: 139px;
+    justify-content: center;
+    margin: 10px 10px;
+    width: 95%;
+}
+
+.col-one-in-two p, div { 
+	color: rgb(61, 61, 61);
+	font-family: 'Open Sans', sans-serif;;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 15px;
+}
+
+.col-one-in-two {
+    float: left;
+    width: 50%;
+}
+
+.col-one-three {
+	float: left;
+	width: 30%;
+	margin: 0 5px;
+}
+
+.col-one-four {
+    font-family: 'Open Sans', sans-serif;;
+	float: left;
+	padding-top: 40px;
+	width: 25%;
+}
+
+.col-one-four h4 {
+	color: rgb(61, 61, 61);
+	font-family: Dosis;
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.col-one-four .agency {
+	font-size: 24px;
+}
+
+
+
+.load-more {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input[type=email], select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: url(mail.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.see {
+    font-family: Open Sans;
+    border: 1px solid rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+    color: #ffffff;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+	margin-top: 30px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #000000
+}
+
+.read-more {
+    color: rgb(241, 101, 34);
+}
+
+#blog {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h6 {
+    color: rgb(142, 142, 142);
+}
+
+#blog .title {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#blog img {
+    width: 100%;
+}
+
+
+
+
+
+.col-one-four p {
+    line-height: 25px;
+}
+
+.button {
+    font-family: Open Sans;
+    text-transform: uppercase;
+    width: 90px;
+    height: 35px;
+    border: none;
+    background-color: rgb(241, 101, 34);
+    color: #ffffff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#header div {
+    color: #ffffff;
+    line-height: 40px;
+    font-family: Dosis;
+}
+
+.line-title {
+    background-color: rgb(241, 101, 34);
+    border: none;
+    height: 3px;
+    width: 20px;
+    margin-left: 0;
+    margin: 3vh 0;
+}
+
+#blog>.container>.title>.line-title {
+    margin: 3vh auto;
+}
+
+.load-more a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.download {
+    margin: 30px auto auto 10px;
+    font-family: Open Sans;
+    border: 1px solid rgb(241, 101, 34);
+    color: rgb(241, 101, 34);
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#experience .title {
+    margin: 6px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 300px;
+}
+
+#feature img, #works img {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 13%;
+}
+
+#feature .col-one-two {
+    height: 500px;
+}
+
+#works {
+    background-color: rgb(36, 36, 42);
+    height: 500px;
+    background-image: url(tablet.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: bottom left;
+	
+}
+
+#works h2 {
+    color: #ffffff;
+}
+
+#works .title {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 7vh;
+}
+
+#works>.container>.title>.line-title {
+    margin: 3vh auto;
+}
+
+#works p {
+    color: rgb(136, 136, 151);
+}
+
+#works img {
+    width: 100%;
+	
+}
+
+#works h3 {
+    text-transform: none;
+    color: #fff;
+}
+
+table {
+    color: rgb(136, 136, 151);
+}
+
+.line-works {
+    width: auto;
+    height: 1px;
+    border: none;
+    background-color: rgb(136, 136, 151);
+    margin: 25px 0;
+}
+
+tr {
+    height: 30px;
+}
+
+td:nth-child(2n-1) {
+    width: 90px;
+}
+
+
+td:last-child:before {
+    content: ":";
+    color: rgb(136, 136, 151);
+    padding-right: 10px;
+}
+
+#slider {
+    background-color: rgb(29, 29, 34);
+    height: 100%;
+    margin-top: -40px;
+}
+
+#slider .col-one-three {
+    height: 180px;
+	margin: 40px auto;
+    background-color: rgb(36, 36, 42);
+}
+
+#slider .col-one-three:nth-child(3) {
+    background-color: white !important;
+    text-align: center;
+}
+
+#slider .see {
+    border: 1px dashed rgb(64, 64, 73);
+    background-color: #000000;
+    width: 90px;
+	margin: 0 10px;
+}
+
+#slider .col-one-three:nth-child(1), #slider .col-one-three:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#slider p:first-child {
+    padding: 2vh;
+    font-size: 2em;
+}
+
+#slider p span {
+    font-weight: bold;
+}
+
+#slider .title {
+	height: 180px;
+	padding: 0 40px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 15px;
+}
+
+.see-ab {
+	font-family: Open Sans;
+    color: rgb(64, 64, 73);
+	width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border: 1px dashed rgb(64, 64, 73);
+    background-color: rgb(29, 29, 34);
+}
+
+.buttons {
+	display:inline-flex;
+}
+
+#slider .buttons {
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+#clients .col-one-two:last-child {
+	float: right;
+	align-items: center;
+	display:flex;
+}
+
+#clients .col-one-two {
+	width: auto;
+	height: 100px;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	border-left: 3px solid rgb(241, 101, 34);
+	border-bottom: 3px solid transparent;
+	margin-left: 7px;
+}
+
+#clients p {
+	margin-top: 15px;
+	display: inline-block;
+}
+
+#clients .col-one-two:first-child {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#clients h2 {
+	margin-top: 32px
+}
+
+.background {
+	width: 100px;
+	background-color: pink;
+}
+
+#footer .read-more {
+	text-transform: uppercase
+}
+
+
+
+
+
+
+.sliders {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+.notes {
+	display: flex;
+	justify-content: space-around;
+}
+
+
