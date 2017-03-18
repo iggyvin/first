@@ -2,17 +2,6 @@
 	.container {
 		width: 92%;
 	}
-	/*
-	.col-1 {width: 100%;}
-	.col-2 {width: 50%;}
-	.col-3 {width: 33%;}
-	.col-4 {width: 25%;}
-	.col-2-2 {width: 50%;}
-	*/
-	
-	#nav ul {
-		
-	}
 	
 	#clients .col-one-two:last-child {
 		display: none;
@@ -123,6 +112,10 @@
 		margin-right: auto;
 	}
 	
+	#footer {
+		height: 400px;
+	}
+	
 	#footer .col-one-four:first-child, #footer .col-one-four:last-child {
 		width: 98%;
 	}
@@ -130,7 +123,6 @@
 	#footer .col-one-four:nth-child(2), #footer .col-one-four:nth-child(3) {
 		width: 50%;
 	}
-	
 	
 	#footer .col-one-four h4 {
 		font-size: 14px;
