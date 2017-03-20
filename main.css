@@ -610,21 +610,112 @@ td:last-child:before {
 	text-transform: uppercase
 }
 
-
-
-
-
-
 .sliders {
 	display: flex;
 	justify-content: space-around;
 }
-
-
 
 .notes {
 	display: flex;
 	justify-content: space-around;
 }
 
+#mobile-nav {
+	display: none;
+}
 
+#mobile-nav {
+  	justify-content: flex-end;
+  	align-items: center;
+  	padding: 10px;
+  	box-sizing: border-box;
+  	height: 10px;
+ 	width: 100%;
+	position: fixed;
+	text-transform: uppercase;
+	color: rgb(64, 64, 73);
+	font-family: Open Sans;
+}
+
+.side-menu {
+  	display: flex;
+  	box-sizing: border-box;
+  	position: absolute;
+  	width: 80px;
+  	top: 20px;
+  	right: -300px;
+  	padding: 0;
+  	transition: 0.3s transform ease-in-out;
+}
+
+.side-menu ul {
+  	position: absolute;
+  	display: flex;
+  	height: calc(100% - 20px);
+  	flex-wrap: wrap;
+  	list-style-type: none;
+  	align-content: flex-start;
+	margin-top: 15px;
+}
+
+.side-menu ul li {
+  	display: flex;
+  	height: 15px;
+  	color: #ffffff;
+  	flex-basis: 100%;
+  	margin-top: 10px;
+  	border-radius: 5px;
+  	overflow: hidden;
+	opacity: 0.5;
+	background-color: #000000;
+  	justify-content: center;
+}
+
+.side-menu ul li a {
+  	display: flex;
+  	align-items: center;
+	color: #ffffff;
+	/*color: rgb(64, 64, 73);*/
+	font-family: 'Dosis', sans-serif;
+	font-size: 10px;
+}
+
+.side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
+  	transform: translateX(-300px); 
+}
+
+.side-menu-trigger {
+  	width: 20px;
+  	height: 20px;
+	padding-top: 10px;
+  	border: 0;
+	margin-top: auto;
+  	border-top: 3px solid rgb(241, 101, 34);;
+  	background: transparent;
+  	position: relative;
+  	transition: 0.3s transform linear;
+}
+
+.side-menu-trigger::before, .side-menu-trigger::after {
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	border-top: 3px solid rgb(241, 101, 34);;
+  	transform: translateY(5px);
+}
+
+.side-menu-trigger::after {
+  	transform: translateY(13px);
+  	transition: 0.3s transform linear;
+}
+
+.side-menu-trigger:focus {
+  	transform: rotate(45deg) translateY(5px);
+  	border: none;
+}
+
+.side-menu-trigger:focus::after {
+  	transform: rotate(-90deg) translateX(-5px);
+}

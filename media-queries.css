@@ -19,15 +19,16 @@
 		width: 50%;
 	}
 	
-	.sliders {
-	}
-	
 	input[type=email], select {
 		background-image: none;
 	}
 	
 	#feature .see, .download {
 		width: 100px;
+	}
+	
+	#mobile-nav {
+		display: none;
 	}
 }
 
@@ -149,6 +150,10 @@
 	#focus .col-one-two:last-child {
 		display: flex;
 		justify-content: center;
+	}
+	
+	#mobile-nav {
+		display: flex;
 	}
 }
 
