@@ -46,18 +46,9 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-
-/* ____________________________________________________________*/
-
-
-
 #abouts, #experience, #feature, #slider, #focus, #blog {
     margin-bottom: 100px;
 }
-
 
 #header {
 	background: url('black.png') no-repeat;
@@ -67,7 +58,6 @@ table {
 	width: 100%;
     height: 100%;
 }
-
 
 #nav {
 	background-color: #000000;
@@ -101,7 +91,6 @@ table {
 #nav ul li a:active, #nav ul li  a:hover {
     color: rgb(241, 101, 34);
 	transition: all 0.45s;
-	
 }
 
 #feature {
@@ -113,7 +102,6 @@ h1 {
     font-size: 48px;
 	font-weight: 700;
 	text-transform: uppercase;
-	
 }
 
 h2 {
@@ -159,7 +147,6 @@ hr {
 	-ms-filter: grayscale(100%);
 	filter: grayscale(100%);
 	margin-left: 12px;
-	
 }
 
 #clients img:hover {
@@ -169,7 +156,6 @@ hr {
     -webkit-filter: grayscale(50%);
 	filter: grayscale(50%);
 }
-
 
 #clients {
 	height: 100px;
@@ -182,8 +168,6 @@ hr {
     align-items:center;
     height: 500px;
 }
-
-
 
 #footer {
 	background-color: rgb(232, 235, 238);
@@ -210,7 +194,6 @@ hr {
 #experience .container {
     display: table;
 }
-
 
 #focus .title {
     height: 151px;
@@ -273,8 +256,6 @@ hr {
 	font-size: 24px;
 }
 
-
-
 .load-more {
     text-align: center;
     text-transform: uppercase;
@@ -292,7 +273,6 @@ input[type=email], select {
     background-image: url(mail.png);
     background-repeat: no-repeat;
     background-position: 95%;
-    
 }
 
 button {
@@ -349,10 +329,6 @@ h6 {
 #blog img {
     width: 100%;
 }
-
-
-
-
 
 .col-one-four p {
     line-height: 25px;
@@ -422,8 +398,6 @@ h6 {
     margin-top: 13%;
 }
 
-
-
 #works {
     background-color: rgb(36, 36, 42);
     height: 500px;
@@ -431,7 +405,6 @@ h6 {
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: bottom left;
-	
 }
 
 #works h2 {
@@ -455,7 +428,6 @@ h6 {
 
 #works img {
     width: 100%;
-	
 }
 
 #works h3 {
@@ -482,7 +454,6 @@ tr {
 td:nth-child(2n-1) {
     width: 90px;
 }
-
 
 td:last-child:before {
     content: ":";
@@ -579,7 +550,10 @@ td:last-child:before {
 
 #clients p {
 	margin-top: 15px;
-	display: inline-block;
+}
+
+#clients span {
+	display: inline-block
 }
 
 #clients .col-one-two:first-child {
@@ -603,7 +577,6 @@ td:last-child:before {
 .sliders {
 	display: flex;
 	justify-content: space-around;
-	
 }
 
 .notes {
@@ -707,8 +680,6 @@ td:last-child:before {
 #abouts img {
 	height: 500px;
 }
-
-
 
 #abouts .col-one-two {
 	height: 500px;
