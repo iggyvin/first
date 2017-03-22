@@ -705,8 +705,7 @@ td:last-child:before {
   	transform: rotate(-90deg) translateX(-5px);
 }
 #abouts img {
-	width: 400px;
-	
+	height: 500px;
 }
 
 
