@@ -27,6 +27,10 @@
 		width: 100px;
 	}
 	
+	#feature, #feature .title {
+		height: 50vw;
+	}
+	
 	#mobile-nav {
 		display: none;
 	}
@@ -71,20 +75,20 @@
 	}
 	
 	.sliders {
-		width:100%;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-	}
-	
-	#slider .col-3 {
-		margin: 50 auto;
 	}
 	
 	.col-one-three {
 		float: none;
 		width: auto;
 		padding: 10px 0;
+	}
+	
+	#slider .col-one-three {
+		width: 90%;
+		margin: 40px auto;
 	}
 	
 	#nav {
@@ -95,16 +99,30 @@
 		width: 80px;
 	}
 	
+	#feature {
+		height: 120vw;
+		min-height: 480px;
+		max-height: 600px;
+	}
+	
+	#feature img {
+		margin: 20px auto;
+	}
+	
+	#feature .title {
+		height: 200px;
+		padding-top: 30px
+	}
+	
 	#clients .col-one-two:last-child {
 		display: none;
 	}
 	
-	#slider {
-		width: 100%;
-	}
-	
 	#works {
 		background-position: bottom right;
+		height: 100vw;
+		min-height: 550px;
+		max-height: 0;
 	}
 	
 	#clients .col-one-two {
@@ -138,6 +156,12 @@
 	#experience img, #focus img {
 		width: 40%;
 	}
+	
+	#feature img {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	#focus .col-one-two:last-child .col-one-in-two:last-child {
 	
@@ -156,6 +180,8 @@
 		display: flex;
 	}
 }
+
+
 
 
 

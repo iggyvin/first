@@ -86,13 +86,12 @@ table {
 #nav ul {
 	font-size: 10px;
 	list-style-type: none;
-	margin-right: -50%;
-
+	margin-right: -30%;
 }
 
 #nav ul li {
 	display: inline;
-	padding: 0 10px 0 10px;
+	padding: 0 0 0 20px;
 }
 
 #nav ul li a {
@@ -108,7 +107,6 @@ table {
 #feature {
     background-color: rgb(232, 235, 238);
     height: 500px;
-    
 }
 
 h1 {
@@ -208,7 +206,7 @@ hr {
 }
 
 #feature .title {
-    height: 500px;
+	height: 500px;
     display: table-cell;
     vertical-align: middle;
     padding-left: 40px;
@@ -429,9 +427,7 @@ h6 {
     margin-top: 13%;
 }
 
-#feature .col-one-two {
-    height: 500px;
-}
+
 
 #works {
     background-color: rgb(36, 36, 42);
@@ -501,8 +497,7 @@ td:last-child:before {
 
 #slider {
     background-color: rgb(29, 29, 34);
-    height: 100%;
-    margin-top: -40px;
+	margin-top: -40px;
 }
 
 #slider .col-one-three {
@@ -540,7 +535,7 @@ td:last-child:before {
 
 #slider .title {
 	height: 180px;
-	padding: 0 40px;
+	padding: 0 30px;
 	display: table-cell;
 	vertical-align: middle;
 	line-height: 15px;
@@ -613,6 +608,7 @@ td:last-child:before {
 .sliders {
 	display: flex;
 	justify-content: space-around;
+	
 }
 
 .notes {
@@ -626,15 +622,10 @@ td:last-child:before {
 
 #mobile-nav {
   	justify-content: flex-end;
-  	align-items: center;
   	padding: 10px;
   	box-sizing: border-box;
-  	height: 10px;
  	width: 100%;
 	position: fixed;
-	text-transform: uppercase;
-	color: rgb(64, 64, 73);
-	font-family: Open Sans;
 }
 
 .side-menu {
@@ -669,13 +660,13 @@ td:last-child:before {
 	opacity: 0.5;
 	background-color: #000000;
   	justify-content: center;
+	text-transform: uppercase;
 }
 
 .side-menu ul li a {
   	display: flex;
   	align-items: center;
 	color: #ffffff;
-	/*color: rgb(64, 64, 73);*/
 	font-family: 'Dosis', sans-serif;
 	font-size: 10px;
 }
@@ -686,10 +677,9 @@ td:last-child:before {
 
 .side-menu-trigger {
   	width: 20px;
-  	height: 20px;
-	padding-top: 10px;
-  	border: 0;
+	height: 20px;
 	margin-top: auto;
+  	border: 0;
   	border-top: 3px solid rgb(241, 101, 34);;
   	background: transparent;
   	position: relative;
