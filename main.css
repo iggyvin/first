@@ -553,7 +553,8 @@ td:last-child:before {
 }
 
 #clients span {
-	display: inline-block
+	display: inline-block;
+	height: 1px;
 }
 
 #clients .col-one-two:first-child {

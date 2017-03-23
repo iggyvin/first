@@ -106,7 +106,8 @@
 	}
 	
 	#feature img {
-		margin: 20px auto;
+		margin-top: 20px;
+		display: block;
 	}
 	
 	#feature .title {
