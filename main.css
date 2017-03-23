@@ -55,8 +55,6 @@ table {
     background-size: cover;
     color: #ffffff;
     font-family: 'Dosis', sans-serif;
-	width: 100%;
-    height: 100%;
 }
 
 #nav {
@@ -70,18 +68,17 @@ table {
 	z-index: 9999999999;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 #nav ul {
-	font-size: 10px;
-	list-style-type: none;
-	margin-right: -30%;
+	font-size: 13px;
+	
 }
 
 #nav ul li {
 	display: inline;
-	padding: 0 0 0 20px;
+	padding: 0 10px 0 10px;
 }
 
 #nav ul li a {
@@ -105,7 +102,7 @@ h1 {
 }
 
 h2 {
-    font-size: 29px;
+    font-size: 22px;
     font-family: 'Dosis', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -113,7 +110,7 @@ h2 {
 
 .text_banner {
 	font-family: sans-serif;
-	font-size: 10px;
+	font-size: 11px;
 	line-height: 25px;
 	text-transform: none;
 }
@@ -127,9 +124,12 @@ hr {
 }
 
 #banner {
-	padding: 200px 0;
+	height: 600px;
     align-items: center;
     display:flex;
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	background-position: 0 50px;
 }
 
 #logo {
@@ -219,7 +219,7 @@ hr {
 .col-one-in-two p, div { 
 	color: rgb(61, 61, 61);
 	font-family: 'Open Sans', sans-serif;
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: 400;
 	line-height: 15px;
 }
@@ -257,6 +257,7 @@ hr {
 }
 
 .load-more {
+	margin-top: 50px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -295,7 +296,7 @@ button {
 
 h5 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     color: #000000
 }
@@ -311,7 +312,7 @@ h5 {
 h3 {
     font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     font-weight: 700;
     font-size: 18px;
 }
@@ -601,7 +602,7 @@ td:last-child:before {
   	display: flex;
   	box-sizing: border-box;
   	position: absolute;
-  	width: 80px;
+  	width: 120px;
   	top: 20px;
   	right: -300px;
   	padding: 0;
@@ -620,7 +621,7 @@ td:last-child:before {
 
 .side-menu ul li {
   	display: flex;
-  	height: 15px;
+  	height: 20px;
   	color: #ffffff;
   	flex-basis: 100%;
   	margin-top: 10px;
@@ -637,7 +638,7 @@ td:last-child:before {
   	align-items: center;
 	color: #ffffff;
 	font-family: 'Dosis', sans-serif;
-	font-size: 10px;
+	font-size: 13px;
 }
 
 .side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
@@ -661,7 +662,7 @@ td:last-child:before {
   	top: 0;
   	left: 0;
   	width: 100%;
-  	border-top: 3px solid rgb(241, 101, 34);;
+  	border-top: 3px solid rgb(241, 101, 34);
   	transform: translateY(5px);
 }
 
@@ -694,4 +695,26 @@ td:last-child:before {
 #footer .col-one-four:nth-child(3) a {
 	color: rgb(61, 61, 61);
 	font-family: 'Open Sans', sans-serif;
+}
+
+h2:after, #blog h6:after {
+	border-bottom: solid rgb(241, 101, 34) 3px;
+	content: "";
+	display: block;
+	margin: 15px 0;
+	width: 25px;
+}
+
+#blog h2:after, #works h2:after {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header h2:after {
+	border-bottom: solid #ffffff 5px;
+	width: 50px;
+}
+
+#clients h2::after {
+	border: none;
 }

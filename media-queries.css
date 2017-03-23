@@ -1,3 +1,42 @@
+@media only screen and (min-width: 1640px) {
+	h1 {
+		font-size: 50px;
+	}
+	
+	h2 {
+		font-size: 32px;
+	}
+	
+	h3 {
+		font-size: 20px;
+	}
+	
+	h4 {
+		
+	}
+	
+	h5 {
+		font-size: 14px;
+	}
+	
+	h6 {
+		
+	}
+	
+	.text-banner {
+		font-size: 12px;
+	}
+	
+	.col-one-in-two p, div {
+		font-size: 12px;
+	}
+	
+	#nav ul {
+	font-size: 15px;
+	}
+}
+
+
 @media only screen and (max-width: 980px) and (min-width: 640px) {
 	.container {
 		width: 92%;
