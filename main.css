@@ -218,7 +218,7 @@ hr {
 
 .col-one-in-two p, div { 
 	color: rgb(61, 61, 61);
-	font-family: 'Open Sans', sans-serif;;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 10px;
 	font-weight: 400;
 	line-height: 15px;
@@ -689,4 +689,9 @@ td:last-child:before {
 #abouts .col-one-two:first-child {
 	align-items: flex-end;
 	display: flex;
+}
+
+#footer .col-one-four:nth-child(3) a {
+	color: rgb(61, 61, 61);
+	font-family: 'Open Sans', sans-serif;
 }
