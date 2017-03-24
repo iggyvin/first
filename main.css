@@ -102,13 +102,13 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 32px;
     font-family: 'Dosis', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.text_banner {
+.text-banner {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	line-height: 25px;
@@ -288,7 +288,7 @@ button {
 
 h5 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #000000
 }
@@ -296,6 +296,7 @@ h5 {
 .read-more {
     color: rgb(241, 101, 34);
 }
+
 
 #blog {
     font-family: 'Open Sans', sans-serif;
@@ -306,11 +307,12 @@ h3 {
 	text-transform: uppercase;
     padding-bottom: 12px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 h6 {
     color: rgb(142, 142, 142);
+	font-size: 12px;
 }
 
 #blog .title {
@@ -576,6 +578,7 @@ td:last-child:before {
 .notes {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 15px;
 }
 
 #mobile-nav {
