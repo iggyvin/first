@@ -196,15 +196,18 @@
 	}
 	
 	#footer {
-		height: 400px;
+		height: 530px;
 	}
 	
-	#footer .col-one-four:first-child, #footer .col-one-four:last-child {
-		width: 98%;
+	#footer .col-one-four:first-child {
+		width: 100%;
+		text-align: center;
+		margin-top: -10px
 	}
 	
 	#footer .col-one-four:nth-child(2), #footer .col-one-four:nth-child(3) {
 		width: 50%;
+		text-align: center;
 	}
 	
 	#footer .col-one-four h4 {
@@ -215,6 +218,21 @@
 	#footer .col-one-four p{
 		padding-bottom: 7px;
 		line-height: normal;
+	}
+	
+	#footer .col-one-four:nth-child(4) {
+		height: 150px;
+		width: 100%;
+	}
+	
+	#map {
+		height: 150px;
+	}
+	
+	#footer .subscribe {
+		width: 100%;
+		margin: auto;
+		text-align: center;
 	}
 	
 	#experience img, #focus img {

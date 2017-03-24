@@ -167,7 +167,7 @@ h2 {
 
 #footer {
 	background-color: rgb(232, 235, 238);
-	height: 219px;
+	height: 350px;
 }
 
 .container {
@@ -231,13 +231,13 @@ h2 {
 }
 
 .col-one-four {
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 	float: left;
 	padding-top: 40px;
 	width: 25%;
 }
 
-.col-one-four h4 {
+h4 {
 	color: rgb(61, 61, 61);
 	font-family: Dosis;
 	font-size: 16px;
@@ -581,6 +581,7 @@ td:last-child:before {
   	box-sizing: border-box;
  	width: 100%;
 	position: fixed;
+	z-index: 1;
 }
 
 .side-menu {
@@ -714,4 +715,21 @@ h2:after, #blog h6:after {
 
 #feature .container, #abouts .container {
 	height: 100%;
+}
+
+#footer .container:first-child {
+	height: 100%;
+}
+
+#map {
+	height: 300px;
+	border: 3px solid rgb(64, 64, 73);
+	border-radius: 5px;
+	margin-top: -20px;
+}
+
+.subscribe {
+	width: 70%;
+	float: left;
+	margin-top: -120px;
 }

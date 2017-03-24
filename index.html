@@ -6,8 +6,11 @@
 	<title>Freebi PSD</title>
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="media-queries.css">
+	<link rel="stylesheet" href="main.js">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<script src="main.js"></script>
+	<script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyDxoIdu56JcPiy4otlRdaiz57LT_UVe4NU&callback=initMap" async defer></script>
 </head>
 <body>
 
@@ -260,7 +263,10 @@
 			<p>Email: <a href="mailto:info@yourdomain.com"> info@yourdomain.com</a></p>
 		</div>
 		<div class="col-one-four">
-			<h4>Sobscribe to our mailing list</h4>
+			<div id="map"></div>
+		</div>
+		<div class="subscribe">
+			<h4>Subscribe to our mailing list</h4>
 			<input type="email" name="email" placeholder="Enter your email">
 		</div>
 	</div>
