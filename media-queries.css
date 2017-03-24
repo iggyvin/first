@@ -7,6 +7,10 @@
 		font-size: 38px;
 	}
 	
+	#clients h2 {
+		font-size: 30px;
+	}
+	
 	h3 {
 		font-size: 28px;
 	}
@@ -33,6 +37,10 @@
 	
 	#nav ul {
 		font-size: 15px;
+	}
+	
+	#works {
+		background-size: 70vh;
 	}
 }
 
@@ -135,6 +143,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
+		padding: 20px 0
 	}
 	
 	.col-one-three {
@@ -145,7 +154,6 @@
 	
 	#slider .col-one-three {
 		width: 90%;
-		margin: 40px auto;
 	}
 	
 	#nav {
@@ -171,16 +179,14 @@
 		height: 200px;
 		padding-top: 30px
 	}
+
 	
 	#clients .col-one-two:last-child {
 		display: none;
 	}
 	
 	#works {
-		background-position: bottom right;
-		height: 100vw;
-		min-height: 550px;
-		max-height: 0;
+		height: 450px;
 	}
 	
 	#clients .col-one-two {
@@ -220,10 +226,6 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-
-	#focus .col-one-two:last-child .col-one-in-two:last-child {
-	
-	}
 	
 	#focus .col-one-two:last-child .col-one-in-two:first-child, #focus .col-one-two:last-child p:not(:last-child) {
 		display: none;
@@ -237,8 +239,40 @@
 	#mobile-nav {
 		display: flex;
 	}
+	
+	#header .col-one-two {
+		margin-right: 45px;
+	}
+	
+	#works table {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	#abouts .container {
+		width: 70%;
+	}
 }
 
+
+@media only screen and (max-width: 450px) {
+	.container {
+		width: 92%;
+	}
+	
+	#works table {
+		justify-content: space-around
+	}
+	
+	#works {
+		display: table-cell;
+    	vertical-align: middle;
+		height: 500px;
+		width: 92%;
+		font-size: 14px;
+		background-image: none;
+	}
+} 
 
 
 

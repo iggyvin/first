@@ -50,12 +50,6 @@ table {
     margin-bottom: 100px;
 }
 
-#header {
-	background: url('black.png') no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    font-family: 'Dosis', sans-serif;
-}
 
 #nav {
 	background-color: #000000;
@@ -108,8 +102,14 @@ h2 {
 	text-transform: uppercase;
 }
 
-.text-banner {
+#header {
+	background: url('black.png') no-repeat;
+    background-size: cover;
+}
+
+#header p {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 	font-size: 13px;
 	line-height: 25px;
 	text-transform: none;
@@ -122,6 +122,12 @@ h2 {
 	background-image: url(logo.png);
 	background-repeat: no-repeat;
 	background-position: 0 50px;
+}
+
+#header .col-one-two {
+    color: #ffffff;
+    line-height: 40px;
+    font-family: "Dosis", sans-serif;
 }
 
 #logo {
@@ -156,8 +162,6 @@ h2 {
 #abouts {
 	background: url('bck_head.png') no-repeat;
 	background-size: cover;
-    display:flex;
-    align-items:center;
     height: 500px;
 }
 
@@ -180,7 +184,6 @@ h2 {
 	height: 500px;
     display: table-cell;
     vertical-align: middle;
-    padding-left: 40px;
 }
 
 #experience .container {
@@ -342,11 +345,7 @@ h6 {
     align-items: center;
 }
 
-#header div {
-    color: #ffffff;
-    line-height: 40px;
-    font-family: Dosis;
-}
+
 
 .line-title {
     background-color: rgb(241, 101, 34);
@@ -394,8 +393,8 @@ h6 {
 }
 
 #works {
+	height: 500px;
     background-color: rgb(36, 36, 42);
-    height: 500px;
     background-image: url(tablet.png);
     background-repeat: no-repeat;
     background-size: 40%;
@@ -409,20 +408,13 @@ h6 {
 #works .title {
     text-align: center;
     width: 50%;
-    margin: auto;
-    padding: 7vh;
-}
-
-#works>.container>.title>.line-title {
-    margin: 3vh auto;
+    margin-left: auto;
+	margin-right: auto;
+    padding: 7vh 0;
 }
 
 #works p {
     color: rgb(136, 136, 151);
-}
-
-#works img {
-    width: 100%;
 }
 
 #works h3 {
@@ -434,12 +426,11 @@ table {
     color: rgb(136, 136, 151);
 }
 
-.line-works {
-    width: auto;
-    height: 1px;
-    border: none;
-    background-color: rgb(136, 136, 151);
-    margin: 25px 0;
+#works .col-one-two p:after {
+	content: "";
+	display: block;
+	border-bottom: 1px solid rgb(136, 136, 151);
+	margin: 25px 0;
 }
 
 tr {
@@ -458,7 +449,6 @@ td:last-child:before {
 
 #slider {
     background-color: rgb(29, 29, 34);
-	margin-top: -40px;
 }
 
 #slider .col-one-three {
@@ -641,11 +631,11 @@ td:last-child:before {
 }
 
 .side-menu-trigger {
-  	width: 20px;
-	height: 20px;
+  	width: 30px;
+	height: 30px;
 	margin-top: auto;
   	border: 0;
-  	border-top: 3px solid rgb(241, 101, 34);;
+  	border-top: 5px solid rgb(241, 101, 34);;
   	background: transparent;
   	position: relative;
   	transition: 0.3s transform linear;
@@ -657,12 +647,12 @@ td:last-child:before {
   	top: 0;
   	left: 0;
   	width: 100%;
-  	border-top: 3px solid rgb(241, 101, 34);
+  	border-top: 5px solid rgb(241, 101, 34);
   	transform: translateY(5px);
 }
 
 .side-menu-trigger::after {
-  	transform: translateY(13px);
+  	transform: translateY(15px);
   	transition: 0.3s transform linear;
 }
 
@@ -716,4 +706,12 @@ h2:after, #blog h6:after {
 
 #blog span {
 	font-weight: bold;
+}
+
+#works .col-one-two {
+	float: right;
+}
+
+#feature .container, #abouts .container {
+	height: 100%;
 }
