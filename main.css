@@ -119,9 +119,7 @@ h2 {
 	height: 600px;
     align-items: center;
     display:flex;
-	background-image: url(logo.png);
-	background-repeat: no-repeat;
-	background-position: 0 50px;
+	background: url(logo.png) no-repeat 0 50px;
 }
 
 #header .col-one-two {
@@ -201,7 +199,7 @@ h2 {
     display: table;
 }
 
-.col-one-in-two p {
+.col-one-in-two a, .col-one-in-two p {
     align-items: center;
     border: 1px solid rgb(232, 235, 238);
     display: flex;
@@ -209,6 +207,10 @@ h2 {
     justify-content: center;
     margin: 10px 10px;
     width: 95%;
+}
+
+.col-one-in-two>a:hover {
+	 background: linear-gradient(0deg, rgb(244, 243, 244) 0%, #ffffff 100%);
 }
 
 .col-one-in-two p, div { 
@@ -265,10 +267,7 @@ input[type=email], select {
     margin: 8px 0;
     padding: 12px 20px;
     width: 100%;
-    background-color: #ffffff;
-    background-image: url(mail.png);
-    background-repeat: no-repeat;
-    background-position: 95%;
+    background: #ffffff url(mail.png) no-repeat 95%;
 }
 
 button {
@@ -335,8 +334,8 @@ h6 {
 .button {
     font-family: Open Sans;
     text-transform: uppercase;
-    width: 90px;
-    height: 35px;
+    width: 90px !important;
+    height: 35px !important;
     border: none;
     background-color: rgb(241, 101, 34);
     color: #ffffff;
@@ -394,11 +393,9 @@ h6 {
 
 #works {
 	height: 500px;
-    background-color: rgb(36, 36, 42);
-    background-image: url(tablet.png);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: bottom left;
+	background: url(tablet.png) no-repeat bottom left;
+	background-size: 40%;
+	background-color: rgb(36, 36, 42);
 }
 
 #works h2 {

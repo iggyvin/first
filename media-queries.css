@@ -58,10 +58,6 @@
 		width: 50%;
 	}
 	
-	input[type=email], select {
-		background-image: none;
-	}
-	
 	#feature .see, .download {
 		width: 100px;
 	}
@@ -245,7 +241,7 @@
 		margin-right: auto;
 	}
 	
-	#focus .col-one-two:last-child .col-one-in-two:first-child, #focus .col-one-two:last-child p:not(:last-child) {
+	#focus .col-one-two:last-child .col-one-in-two:first-child, #focus .col-one-two:last-child a:not(:last-child) {
 		display: none;
 	}
 	
@@ -289,6 +285,14 @@
 		width: 92%;
 		font-size: 14px;
 		background-image: none;
+	}
+	
+	#focus a, #experience a:not(.see) {
+		height: 70px;
+	}
+	
+	#focus .col-one-in-two>p {
+		border: none;
 	}
 } 
 
