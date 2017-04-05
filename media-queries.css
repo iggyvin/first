@@ -279,12 +279,14 @@
 	
 	#header .col-one-two:last-child  {
 		display: flex;
-		height: 400px;
+		height: 10px;
+		width: 90px;
 		position: absolute;
-		width: 90%;
-		justify-content: center;
-		align-items: flex-end;
+		top: 500px;
+		right: 40%;
 	}
+	
+	
 	
 	#header .container {
 		position: relative;
@@ -358,6 +360,12 @@
 		border: none;
 	}
 } 
+
+@media only screen and (max-width: 380px) {
+	#header .col-one-two:last-child {
+		right: 31%;
+	}
+}
 
 
 
