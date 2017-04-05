@@ -105,6 +105,7 @@ h2 {
 #header {
 	background: url('black.png') no-repeat;
     background-size: cover;
+	position: relative;
 }
 
 #header p {
