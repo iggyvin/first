@@ -25,7 +25,7 @@ function carousel() {
     var x = document.getElementsByClassName("slides");
 	var dots = document.getElementsByClassName("badge")
     for (i = 0; i < x.length; i++) {
-      	x[i].style.display = "none"; 
+      	x[i].style.display = "none";
 		dots[i].style.backgroundColor = "transparent";
     }
     myIndex++;
