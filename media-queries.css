@@ -200,7 +200,7 @@
 	}
 	
 	#footer {
-		height: 530px;
+		height: 580px;
 	}
 	
 	#footer .col-one-four:first-child {
@@ -322,9 +322,7 @@
 
 	@keyframes animatebottom
 	{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-
 }
-
 
 @media only screen and (max-width: 450px) {
 	.container {
