@@ -283,7 +283,7 @@
 		width: 90px;
 		position: absolute;
 		top: 500px;
-		right: 40%;
+		right: 41%;
 	}
 	
 	
@@ -363,7 +363,13 @@
 
 @media only screen and (max-width: 380px) {
 	#header .col-one-two:last-child {
-		right: 31%;
+		right: 35%;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#header .col-one-two:last-child {
+		right: 30%;
 	}
 }
 
