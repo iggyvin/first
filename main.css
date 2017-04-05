@@ -115,6 +115,60 @@ h2 {
 	text-transform: none;
 }
 
+#header .slides {
+	display: none;
+}
+
+#header .animate-bottom {
+	position: relative;
+	animation: animatebottom 1s
+}
+.up, .down {
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+
+.up {
+	border-bottom: 8px solid #ffffff;
+}
+
+.down {
+	border-top: 8px solid #ffffff;
+}
+
+@keyframes animatebottom
+{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.badge {
+	display: block;
+	height:4px;
+	width:4px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 6px 1px 6px 1px;
+}
+
+.badge:hover {
+	background-color: rgb(241, 101, 34);
+	border: 1px solid rgb(241, 101, 34);
+}
+
+.active {
+	background-color: rgb(241, 101, 34);
+	border: 1px solid rgb(241, 101, 34);
+	display: block;
+	border-radius: 100%;
+	height:4px;
+	width:4px;
+	margin: 6px 1px 6px 1px;
+	border: 1px solid #ffffff;
+}
+
 #banner {
 	height: 600px;
     align-items: center;
@@ -126,10 +180,6 @@ h2 {
     color: #ffffff;
     line-height: 40px;
     font-family: "Dosis", sans-serif;
-}
-
-#logo {
-	padding-top: 40px;
 }
 
 #clients ul li {
@@ -548,11 +598,6 @@ td:last-child:before {
 	margin-top: 32px
 }
 
-.background {
-	width: 100px;
-	background-color: pink;
-}
-
 #footer .read-more {
 	text-transform: uppercase
 }
@@ -568,100 +613,6 @@ td:last-child:before {
 	margin-top: 15px;
 }
 
-#mobile-nav {
-	display: none;
-}
-
-#mobile-nav {
-  	justify-content: flex-end;
-  	padding: 10px;
-  	box-sizing: border-box;
- 	width: 100%;
-	position: fixed;
-	z-index: 1;
-}
-
-.side-menu {
-  	display: flex;
-  	box-sizing: border-box;
-  	position: absolute;
-  	width: 120px;
-  	top: 20px;
-  	right: -300px;
-  	padding: 0;
-  	transition: 0.3s transform ease-in-out;
-}
-
-.side-menu ul {
-  	position: absolute;
-  	display: flex;
-  	height: calc(100% - 20px);
-  	flex-wrap: wrap;
-  	list-style-type: none;
-  	align-content: flex-start;
-	margin-top: 15px;
-}
-
-.side-menu ul li {
-  	display: flex;
-  	height: 20px;
-  	color: #ffffff;
-  	flex-basis: 100%;
-  	margin-top: 10px;
-  	border-radius: 5px;
-  	overflow: hidden;
-	opacity: 0.5;
-	background-color: #000000;
-  	justify-content: center;
-	text-transform: uppercase;
-}
-
-.side-menu ul li a {
-  	display: flex;
-  	align-items: center;
-	color: #ffffff;
-	font-family: 'Dosis', sans-serif;
-	font-size: 13px;
-}
-
-.side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
-  	transform: translateX(-300px); 
-}
-
-.side-menu-trigger {
-  	width: 30px;
-	height: 30px;
-	margin-top: auto;
-  	border: 0;
-  	border-top: 5px solid rgb(241, 101, 34);;
-  	background: transparent;
-  	position: relative;
-  	transition: 0.3s transform linear;
-}
-
-.side-menu-trigger::before, .side-menu-trigger::after {
-  	content: '';
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-  	border-top: 5px solid rgb(241, 101, 34);
-  	transform: translateY(5px);
-}
-
-.side-menu-trigger::after {
-  	transform: translateY(15px);
-  	transition: 0.3s transform linear;
-}
-
-.side-menu-trigger:focus {
-  	transform: rotate(45deg) translateY(5px);
-  	border: none;
-}
-
-.side-menu-trigger:focus::after {
-  	transform: rotate(-90deg) translateX(-5px);
-}
 #abouts img {
 	height: 500px;
 }
@@ -730,3 +681,111 @@ h2:after, #blog h6:after {
 	float: left;
 	margin-top: -120px;
 }
+
+.carousel {
+	margin-left: 15px;
+}
+
+#mobile-nav {
+	position: fixed;
+	display: none;
+	z-index: 1;
+	text-align: right;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.burger {
+  	display: inline-block;
+  	background: none;
+	margin: 10px;
+  	cursor: pointer;
+	outline: 0;
+  	border-bottom: 4px solid rgb(241, 101, 34);
+  	width: 28px;
+  	transition: border-bottom 1s ease-in-out;
+  	-webkit-transition: border-bottom 1s ease-in-out; 
+}
+
+.burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid rgb(241, 101, 34);
+    margin-bottom: 5px;
+	width: 100%;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid rgb(241, 101, 34);
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  	display: none;
+}
+
+.burger-check:checked ~ .burger {
+  	border-bottom: 4px solid transparent;
+  	transition: border-bottom 0.3s ease-in-out;
+  	-webkit-transition: border-bottom 0.3s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);      
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px); 
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navigation {
+  	overflow: hidden;
+  	max-height: 0;
+  	transition: max-height 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .navigation {
+  	max-height: 500px;
+  	transition: max-height 0.5s ease-in-out;
+}
+
+#mobile-nav ul {
+	width: 100%;
+}
+
+#mobile-nav ul li {
+	margin: 0 5px;
+  	display: flex;
+  	height: 30px;
+	background-color: rgb(241, 101, 34);
+	border: 1px solid rgb(241, 101, 34);
+	text-transform: uppercase;
+}
+
+#mobile-nav ul li a {
+  	display: flex;
+  	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-family: 'Dosis', sans-serif;
+	font-size: 12px;
+	width: 100%;
+}
+
+#mobile-nav ul li a:hover {
+	background-color: rgb(142, 142, 142);
+	transition: all 0.75s;
+}
+

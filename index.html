@@ -9,13 +9,12 @@
 	<link rel="stylesheet" href="main.js">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-	<script src="main.js"></script>
 	<script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyDxoIdu56JcPiy4otlRdaiz57LT_UVe4NU&callback=initMap" async defer></script>
 </head>
 <body>
 
 <nav id="nav">
-	<ul>
+	<ul> 
 		<li><a href="#header">home</a></li> 
 		<li><a href="#works">works</a></li> 
 		<li><a href="#focus">industries</a></li> 
@@ -27,9 +26,9 @@
 </nav>
 
 <nav id="mobile-nav">
-    <button class="side-menu-trigger"></button>
-    <aside class="side-menu">
-      <ul>
+<input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+<div id="navigation1" class="navigation">
+	<ul>
       	<li><a href="#header">home</a></li> 
 		<li><a href="#works">works</a></li> 
 		<li><a href="#focus">industries</a></li> 
@@ -37,19 +36,48 @@
 		<li><a href="#blog">news</a></li> 
 		<li><a href="#abouts">who we are</a></li> 
 		<li><a href="#footer">contact</a></li>
-      </ul>
-  </aside>
+     </ul>
+</div>
 </nav>
 
 <header id="header">
 	<div class="container">
 		<div id="banner">
-		<div class="col-one-two">
-			<h1>Agency</h1>
-			<h2>Freebie psd download1</h2>
+		<div class="col-one-two slides animate-bottom">
+			<h1>Agency 1</h1>
+			<h2>Freebie psd download 1</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas minima sequi, vitae dicta fuga. Architecto odio corrupti labore, quibusdam at esse alias tempora placeat, cumque recusandae rem aspernatur cum cupiditate.</p>
         </div>
-		</div>
+        <div class="col-one-two slides animate-bottom">
+			<h1>Agency 2</h1>
+			<h2>Freebie psd download 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime autem aut neque porro impedit, nostrum exercitationem odit optio cumque expedita ab temporibus nisi, assumenda nemo ullam, natus officia consectetur at?</p>
+        </div>
+        <div class="col-one-two slides animate-bottom">
+			<h1>Agency 3</h1>
+			<h2>Freebie psd download 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, molestiae, excepturi! Dolore veniam cum ipsa atque impedit architecto, quidem non corporis illo. Dolorem odit, aspernatur commodi. Nemo nam consequatur nostrum?</p>
+        </div>
+        <div class="col-one-two slides animate-bottom">
+			<h1>Agency 4</h1>
+			<h2>Freebie psd download 4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae cumque quod beatae possimus, quibusdam animi nihil rerum sit impedit ducimus, sequi aliquid quae laboriosam minus repellendus veritatis quasi iure laborum?</p>
+        </div>
+        <div class="col-one-two slides animate-bottom">
+			<h1>Agency 5</h1>
+			<h2>Freebie psd download 5</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptate officia ad impedit eligendi, laboriosam maxime sapiente blanditiis provident iure libero cupiditate et eaque ipsam ipsa reprehenderit debitis. Dignissimos, beatae?</p>
+        </div>
+		<div class="col-one-two carousel">
+    		<div class="up" onclick="plusDivs(-1)"></div>
+			<span class="badge" onclick="currentDiv(1)"></span>
+			<span class="badge" onclick="currentDiv(2)"></span>
+			<span class="badge" onclick="currentDiv(3)"></span>
+			<span class="badge" onclick="currentDiv(4)"></span>
+			<span class="badge" onclick="currentDiv(5)"></span>
+			<div class="down" onclick="plusDivs(1)"></div>
+  		</div>
+	</div>
 	</div>
 </header>
 
@@ -271,5 +299,7 @@
 		</div>
 	</div>
 </footer>
+
+<script src="main.js" async defer></script>
 </body>
 </html>
