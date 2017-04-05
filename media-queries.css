@@ -318,14 +318,17 @@
 		border-left: 8px solid #fff;
 		margin-left: 7px;
 	}
-	
-	.carousel {
-		display: block;
-		margin-left: auto;
-	}
 
 	@keyframes animatebottom
 	{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+	
+	.carousel {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	
 }
 
 @media only screen and (max-width: 450px) {
