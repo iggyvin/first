@@ -272,6 +272,9 @@
 		display: flex;
 		float: none;
 		text-align: center;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	#header .col-one-two:last-child  {
@@ -286,7 +289,6 @@
 	#header .container {
 		position: relative;
 		margin: 0 auto;
-		width: 92%;
 	}
 		
 	#works table {
@@ -327,12 +329,6 @@
 
 	@keyframes animatebottom
 	{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-	
-	#banner {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
 	
 }
 
