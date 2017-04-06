@@ -9,6 +9,14 @@
 	}
 }
 
+
+
+@media only screen and (min-width: 3000px) {
+	#works {
+		height: 800px;
+	}
+}
+
 @media only screen and (min-width: 2700px) {
 	#works {
 		background-size: 20vw;
