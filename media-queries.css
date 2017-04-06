@@ -1,6 +1,25 @@
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 4000px) {
+	#works {
+		background-size: 70vw;
+		height: 700px;
+		
+	}
+}
+
+@media only screen and (min-width: 2700px) {
+	#works {
+		background-size: 20vw;
+	}
+}
+	
+@media only screen and (min-width: 1640px) and (max-width: 2700px) {
 	h1 {
 		font-size: 50px;
+	}
+	
+	#works {
+		background-size: 35vw;
+		height: 500px;
 	}
 	
 	h2 {
@@ -39,11 +58,6 @@
 		font-size: 15px;
 	}
 	
-	#works {
-		background-size: 30vh;
-		height: 800px;
-	}
-	
 	#slider .col-one-three {
 		height: 250px;
 	}
@@ -57,6 +71,11 @@
 	
 	#header .col-one-two:last-child {
 		width: 10px;
+	}
+	
+	#works {
+		background-size: 45vw;
+		height: 450px;
 	}
 }
 
@@ -77,8 +96,6 @@
 	#feature, #feature .title {
 		height: 50vw;
 	}
-	
-
 	
 	h3, h2, .agency {
 		line-height: 19px;
@@ -291,8 +308,6 @@
 		top: 500px;
 		right: 41%;
 	}
-	
-	
 	
 	#header .container {
 		position: relative;
