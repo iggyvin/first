@@ -1,7 +1,7 @@
 @media only screen and (min-width: 4000px) {
 	#works {
 		background-size: 70vw;
-		height: 900px;
+		height: 1000px;
 	}
 	
 	#slider .col-one-three {
@@ -12,6 +12,7 @@
 @media only screen and (min-width: 2700px) {
 	#works {
 		background-size: 20vw;
+		height: 700px;
 	}
 }
 	
