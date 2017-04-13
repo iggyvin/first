@@ -64,3 +64,25 @@ function showDivs(n) {
   	dots[slideIndex-1].style.backgroundColor = "rgb(241, 101, 34)";
 	
 }
+
+
+
+
+/* ---------- CLIENTS ----------- */
+
+function showText(args) {
+	var i;
+	var x = document.getElementsByClassName(args);
+	for (i=0; i<x.length; i++) {
+		x[i].style.display="inline";
+	}
+	
+}
+
+function hideText(args) {
+	var i;
+	var x = document.getElementsByClassName(args);
+	for (i=0; i<x.length; i++) {
+		x[i].style.display="none";
+	}
+}

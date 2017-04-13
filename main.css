@@ -128,8 +128,8 @@ h2 {
 	cursor: pointer;
 	width: 0;
 	height: 0;
-	border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
 }
 
 .up {
@@ -348,6 +348,8 @@ h5 {
 
 .read-more {
     color: rgb(241, 101, 34);
+	width: 50px;
+	cursor: pointer;
 }
 
 
@@ -374,9 +376,7 @@ h6 {
     margin: auto;
 }
 
-#blog img {
-    width: 100%;
-}
+
 
 .col-one-four p {
     line-height: 25px;
@@ -788,5 +788,90 @@ h2:after, #blog h6:after {
 #mobile-nav ul li a:hover {
 	background-color: rgb(142, 142, 142);
 	transition: all 0.75s;
+}
+
+
+
+
+.cli {
+	position: fixed;
+	background-color: rgb(255,255,255);
+	height: 90% !important;
+	width: 80% !important;
+	top: 10%;
+	left: 10%;
+	justify-content: center;
+	align-items: center;
+}
+
+#blog img {
+	transition: transform 0.3s;
+    width: 100%;
+}
+
+#blog img:hover {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	transform: scale(1.25);
+}
+
+.img-blog {
+	overflow: hidden;
+}
+
+
+
+.show-txt {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.show-txt:hover {
+	opacity: 1;
+}
+
+.clicli {
+	position: fixed;
+	display: none;
+	top: 20%;
+	left: 25%;
+	right: 25%;
+	background-color: #ffffff;
+	border: 5px solid rgb(241, 101, 34);
+	text-align: center;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 30px;
+	height: 20px !important;
+	opacity: 0.3;
+	z-index: 999;
+	cursor: pointer;
+}
+.close:hover {
+  	opacity: 1;
+}
+.close:before, .close:after {
+  	position: absolute;
+  	content: '';
+  	height: 20px;
+  	width: 2px;
+  	background-color: #333;
+}
+.close:before {
+  	transform: rotate(45deg);
+}
+.close:after {
+  	transform: rotate(-45deg);
 }
 

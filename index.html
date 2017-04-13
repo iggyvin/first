@@ -86,7 +86,7 @@
 	<div class="container">
 		<div class="col-one-two">
 			<h2>Our Clients</h2>
-			<p><a href="#" class="read-more">View all<span class="triangle"></span></a></p>
+			<p class="read-more" onclick="showText('clicli')" >View all<span class="triangle"></span></p>
 		</div>
 		<div class="col-one-two">
 			<img src="clients1.png" alt="365App">
@@ -96,6 +96,22 @@
 			<img src="clients5.png" alt="Drive my safely">
 			<img src="clients6.png" alt="Toni and guy">
 		</div>
+	</div>
+	<div class="clicli">
+		<span class="close" onclick="hideText('clicli')"></span>
+		<h2>Our Clients</h2>
+		<img src="clients1.png" alt="365App">
+		<img src="clients2.png" alt="Get Licensed">
+		<img src="clients3.png" alt="Hot Jobs">
+		<img src="clients4.png" alt="UNG">
+		<img src="clients5.png" alt="Drive my safely">
+		<img src="clients6.png" alt="Toni and guy">
+		<img src="clients4.png" alt="365App">
+		<img src="clients5.png" alt="Get Licensed">
+		<img src="clients6.png" alt="Hot Jobs">
+		<img src="clients3.png" alt="UNG">
+		<img src="clients2.png" alt="Drive my safely">
+		<img src="clients1.png" alt="Toni and guy">
 	</div>
 	</section>
 
@@ -244,21 +260,23 @@
 			</div>
 			<div class="notes">
 			<div class="col-one-three">
-				<img src="beach.png" alt="plaza">
+			
+				<div class="img-blog"><a href="#"><img onmouseover="showText(this)" onmouseout="hideText(this)" src="beach.png" alt="plaza"></a></div>
+				
 				<h5>Is there hope for the SEO profession?</h5>
 				<h6>Post by <span>Lawrence R. Smith</span></h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
 				<a href="#" class="read-more">Read more</a>
 			</div>
 			<div class="col-one-three">
-			   <img src="shoes.png" alt="buty">
-			   <h5>Is there hope for the SEO profession?</h5>
+				<div class="img-blog"><a href="#"><img src="shoes.png" alt="buty"></a></div>
+			   	<h5>Is there hope for the SEO profession?</h5>
 				<h6>Post by <span>Esperanza R. Smith</span></h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
 				<a href="#" class="read-more">Read more</a>
 			</div>
 			<div class="col-one-three">
-				<img src="gory.png" alt="gory">
+				<div class="img-blog"><a href="#"><img src="gory.png" alt="gory"></a></div>
 				<h5>Is there hope for the SEO profession?</h5>
 				<h6>Post by <span>Heather R. Smith</span></h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>

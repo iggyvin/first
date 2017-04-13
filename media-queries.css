@@ -111,6 +111,11 @@
 		line-height: 30px;
 		margin-top: 20px;
 	}
+	
+	.clicli {
+		left: 10%;
+		right: 10%;
+	}
 }
 
 
@@ -360,6 +365,15 @@
 	@keyframes animatebottom
 	{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 	
+	.clicli {
+		top: 10%;
+		left: 10%;
+		right: 10%;
+	}
+	
+	.clicli img {
+		height: 55px;
+	}
 }
 
 @media only screen and (max-width: 550px) {
@@ -399,12 +413,18 @@
 	#header .col-one-two:last-child {
 		right: 35%;
 	}
+	
+	.clicli img {
+		height: 8vh;
+		max-height: 40px;
+	}
 }
 
 @media only screen and (max-width: 300px) {
 	#header .col-one-two:last-child {
 		right: 29%;
 	}
+	
 }
 
 
