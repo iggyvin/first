@@ -46,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 
-#abouts, #experience, #feature, #slider, #focus, #blog {
+#abouts, #experience, #feature, #slider, #focus {
     margin-bottom: 100px;
 }
 
@@ -281,6 +281,8 @@ h2 {
 	float: left;
 	width: 30%;
 	margin: 0 5px;
+	
+	
 }
 
 .col-one-four {
@@ -304,10 +306,15 @@ h4 {
 	font-size: 24px;
 }
 
-.load-more {
-	margin-top: 50px;
+.load {
     text-align: center;
     text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+	display:inline-block;
+	margin: 40px 0;
+	width: 100%;
+	cursor: pointer;
 }
 
 input[type=email], select {
@@ -355,6 +362,7 @@ h5 {
 
 #blog {
     font-family: 'Open Sans', sans-serif;
+	min-height: 500px;
 }
 
 h3 {
@@ -410,10 +418,7 @@ h6 {
     margin: 3vh auto;
 }
 
-.load-more a {
-    color: #000000;
-    font-weight: bold;
-}
+
 
 .download {
     margin: 30px auto auto 10px;
@@ -523,7 +528,7 @@ td:last-child:before {
     display: flex;
 }
 
-#slider p:first-child {
+#slider .title p:first-child {
     padding: 2vh;
     font-size: 2em;
 }
@@ -544,12 +549,12 @@ td:last-child:before {
 	font-family: Open Sans;
     color: rgb(64, 64, 73);
 	width: 40px;
-    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 	border: 1px dashed rgb(64, 64, 73);
     background-color: rgb(29, 29, 34);
+	cursor: pointer;
 }
 
 .buttons {
@@ -790,9 +795,6 @@ h2:after, #blog h6:after {
 	transition: all 0.75s;
 }
 
-
-
-
 .cli {
 	position: fixed;
 	background-color: rgb(255,255,255);
@@ -807,6 +809,7 @@ h2:after, #blog h6:after {
 #blog img {
 	transition: transform 0.3s;
     width: 100%;
+	cursor: pointer;
 }
 
 #blog img:hover {
@@ -815,14 +818,23 @@ h2:after, #blog h6:after {
 	-o-filter: blur(3px);
 	-ms-filter: blur(3px);
 	filter: blur(3px);
-	transform: scale(1.25);
+	transform: scale(1.25);	
 }
+
+.img-blog:hover:before {
+	content: "READ MORE";
+	color: #000000;
+	display: block;
+	z-index: 999;
+	position:absolute;
+	background-color: rgba(255,255,255,0.7);
+	background-size: 100%;
+}
+
 
 .img-blog {
 	overflow: hidden;
 }
-
-
 
 .show-txt {
 	position: absolute;
@@ -875,3 +887,11 @@ h2:after, #blog h6:after {
   	transform: rotate(-45deg);
 }
 
+.blog-note {
+	display: none;
+	margin-top: 20px;
+}
+
+.sl {
+	display: none;
+}

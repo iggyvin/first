@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="main.js">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-	<script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyDxoIdu56JcPiy4otlRdaiz57LT_UVe4NU&callback=initMap" type="text/javascript" async defer></script>
+	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 <body>
 
@@ -175,28 +175,38 @@
 
 	<div id="slider">
 		<div class="container">
-		<div class="sliders">
+		<div class="sliders sl">
 			<div class="col-one-three">
-				<a href="#">
-				<img src="ON.png" alt="Opportunity Network">
-				</a>
+				<a href="#"><img src="ON.png" alt="Opportunity Network"></a>
 			</div>
 			<div class="col-one-three">
-				<a href="#">
-				<img src="ivivu.png" alt="ivivu.com">
-				</a>
+				<a href="#"><img src="ivivu.png" alt="ivivu.com"></a>
 			</div>
 			<div class="col-one-three">
 				<div class="title">	<p>future<span>think</span></p>
 				<p>Futurethink.com is the professional website which researches and develops innovation for organizations using a refreshing and simple approach.</p>
-				<p><a href="#" class="read-more">View details</a></p>
+				<a class="read-more">View details</a>
+				</div>
+			</div>
+		</div>
+		<div class="sliders sl">
+			<div class="col-one-three">
+				<a href="#"><img src="samolocik.png" alt="Opportunity Network"></a>
+			</div>
+			<div class="col-one-three">
+				<a href="#"><img src="ekran.png" alt="ivivu.com"></a>
+			</div>
+			<div class="col-one-three">
+				<div class="title">	<p>future<span>think</span></p>
+				<p>Futurethink.com Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ratione maxime sed, amet et ex placeat consequatur obcaecati, tempore fugiat temporibus, reprehenderit in pariatur consequuntur odit. Praesentium corporis tenetur illo!</p>
+				<a class="read-more">View details</a>
 				</div>
 			</div>
 		</div>
 		<div class="buttons">
-			<a href="#" class="see-ab">&lt;</a>
-			<a href="#" class="see">Show all</a>
-			<a href="#" class="see-ab">&gt;</a>
+			<p class="see-ab" onclick="plusDivs(-1)">&lt;</p>
+			<p class="see">Show all</p>
+			<p class="see-ab" onclick="plusDivs(1)">&gt;</p>
 		</div>
 		</div>
 	</div>
@@ -258,33 +268,93 @@
 				<h2>Recent blog</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae quis voluptate doloribus veritatis qui sunt aliquid beatae natus aliquam ipsam autem consequuntur ex quam itaque placeat, commodi, rem necessitatibus.</p>
 			</div>
-			<div class="notes">
-			<div class="col-one-three">
-			
-				<div class="img-blog"><a href="#"><img onmouseover="showText(this)" onmouseout="hideText(this)" src="beach.png" alt="plaza"></a></div>
-				
+			<div id="notes">
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="beach.png" alt="beach"></div>
 				<h5>Is there hope for the SEO profession?</h5>
 				<h6>Post by <span>Lawrence R. Smith</span></h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
 				<a href="#" class="read-more">Read more</a>
 			</div>
-			<div class="col-one-three">
-				<div class="img-blog"><a href="#"><img src="shoes.png" alt="buty"></a></div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="shoes.png" alt="shoes"></div>
 			   	<h5>Is there hope for the SEO profession?</h5>
 				<h6>Post by <span>Esperanza R. Smith</span></h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
 				<a href="#" class="read-more">Read more</a>
 			</div>
-			<div class="col-one-three">
-				<div class="img-blog"><a href="#"><img src="gory.png" alt="gory"></a></div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="gory.png" alt="gory"></div>
+				<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Heather R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="shoes.png" alt="shoes"></div>
+				<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Lawrence R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="gory.png" alt="gory"></div>
+			   	<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Esperanza R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="beach.png" alt="beach"></div>
+				<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Heather R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="gory.png" alt="gory"></div>
+				<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Lawrence R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="beach.png" alt="beach"></div>
+			   	<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Esperanza R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="shoes.png" alt="shoes"></div>
+				<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Heather R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+				<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="beach.png" alt="beach"></div>
+				<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Lawrence R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="shoes.png" alt="shoes"></div>
+			   	<h5>Is there hope for the SEO profession?</h5>
+				<h6>Post by <span>Esperanza R. Smith</span></h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
+				<a href="#" class="read-more">Read more</a>
+			</div>
+			<div class="col-one-three blog-note">
+				<div class="img-blog"><img src="gory.png" alt="gory"></div>
 				<h5>Is there hope for the SEO profession?</h5>
 				<h6>Post by <span>Heather R. Smith</span></h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in accusantium nisi animi nobis incidunt iusto nulla corrupti, consectetur, possimus tempora nihil, similique necessitatibus! A culpa alias eveniet amet error?</p>
 				<a href="#" class="read-more">Read more</a>
 			</div>
 			</div>
-			<p class="load-more"><a href="#">&#43; Load more</a>
-			</p>
+			<p class="load load-more">&#43; Show more</p>
 		</div>
 	</section>
 </main>
@@ -319,5 +389,6 @@
 </footer>
 
 <script src="main.js" type="text/javascript" async defer></script>
+<script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyDxoIdu56JcPiy4otlRdaiz57LT_UVe4NU&callback=initMap" type="text/javascript" async defer></script>
 </body>
 </html>
