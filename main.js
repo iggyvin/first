@@ -68,13 +68,25 @@ function showDivs1(n) {
 
 function showDivs2(n) {
 	var i;
-  	var x = document.getElementsByClassName("sl");
-  	if (n > x.length) {slideIndex2 = 1}
-  	if (n < 1) {slideIndex2 = x.length}
-  	for (i = 0; i < x.length; i++) {
-     	x[i].style.display =  "none";
-  	}
-  	x[slideIndex2-1].style.display = "flex";
+	var width = window.innerWidth;
+	if (width<640) {
+		var x = document.getElementsByClassName("sl-t");
+		if (n > x.length) {slideIndex2 = 1}
+		if (n < 1) {slideIndex2 = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display =  "none";
+		}
+		x[slideIndex2-1].style.display = "block";
+	}
+	else {
+		var x = document.getElementsByClassName("sl");
+		if (n > x.length) {slideIndex2 = 1}
+		if (n < 1) {slideIndex2 = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display =  "none";
+		}
+		x[slideIndex2-1].style.display = "flex";
+	}
 }
 // ---------- CLIENTS ----------- 
 
@@ -84,7 +96,6 @@ function showText(args) {
 	for (i=0; i<x.length; i++) {
 		x[i].style.display="inline";
 	}
-	
 }
 
 function hideText(args) {
@@ -95,26 +106,19 @@ function hideText(args) {
 	}
 }
 
-
-
-
 // ------ BLOG LOAD MORE ---- 
 
-
 $(document).ready(function () {
-    size_li = $("#notes .blog-note").size();
+    size_li = $(".blog-note").size();
     x=3;
-    $('#notes .blog-note:lt('+x+')').show();
+    $('.blog-note:lt('+x+')').show();
     $('.load-more').click(function () {
         x= (x+3 <= size_li) ? x+3 : size_li;
-        $('#notes .blog-note:lt('+x+')').show();
+        $('.blog-note:lt('+x+')').show();
     });
-    $('.load-less').click(function () {
+    /*$('.load-less').click(function () {
         x=(x-3<0) ? 3 : x-3;
-        $('#notes .blog-note').not(':lt('+x+')').hide();
-    });
+        $('.blog-note').not(':lt('+x+')').hide();
+    });*/
 });
-  
-  
-  
 

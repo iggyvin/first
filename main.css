@@ -261,7 +261,7 @@ h2 {
 }
 
 .col-one-in-two>a:hover {
-	 background: linear-gradient(0deg, rgb(244, 243, 244) 0%, #ffffff 100%);
+	background: linear-gradient(0deg, rgb(244, 243, 244) 0%, #ffffff 100%);
 }
 
 .col-one-in-two p, div { 
@@ -278,11 +278,8 @@ h2 {
 }
 
 .col-one-three {
-	float: left;
 	width: 30%;
-	margin: 0 5px;
-	
-	
+	float: left;
 }
 
 .col-one-four {
@@ -298,7 +295,6 @@ h4 {
 	font-size: 16px;
 	font-weight: 700;
 	padding-bottom: 20px;
-	padding-right: 20px;
 	text-transform: uppercase;
 }
 
@@ -359,7 +355,6 @@ h5 {
 	cursor: pointer;
 }
 
-
 #blog {
     font-family: 'Open Sans', sans-serif;
 	min-height: 500px;
@@ -384,8 +379,6 @@ h6 {
     margin: auto;
 }
 
-
-
 .col-one-four p {
     line-height: 25px;
 }
@@ -403,8 +396,6 @@ h6 {
     align-items: center;
 }
 
-
-
 .line-title {
     background-color: rgb(241, 101, 34);
     border: none;
@@ -417,8 +408,6 @@ h6 {
 #blog>.container>.title>.line-title {
     margin: 3vh auto;
 }
-
-
 
 .download {
     margin: 30px auto auto 10px;
@@ -451,7 +440,7 @@ h6 {
 	height: 500px;
 	background: url(tablet.png) no-repeat bottom left;
 	background-size: 40%;
-	background-color: rgb(36, 36, 42);
+	background-color: rgb(36, 36, 42);	
 }
 
 #works h2 {
@@ -506,7 +495,6 @@ td:last-child:before {
 
 #slider .col-one-three {
     height: 180px;
-	margin: 40px auto;
     background-color: rgb(36, 36, 42);
 }
 
@@ -522,7 +510,7 @@ td:last-child:before {
 	margin: 0 10px;
 }
 
-#slider .col-one-three:nth-child(1), #slider .col-one-three:nth-child(2) {
+#slider .col-one-three:not(:nth-child(3)) {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -564,7 +552,7 @@ td:last-child:before {
 #slider .buttons {
 	justify-content: center;
 	width: 100%;
-	margin-bottom: 30px;
+	margin: 60px 0 30px 0;
 }
 #clients .col-one-two:last-child {
 	float: right;
@@ -618,6 +606,11 @@ td:last-child:before {
 	justify-content: space-around;
 	margin-top: 15px;
 }
+
+.blog-note {
+	display: none;
+}
+
 
 #abouts img {
 	height: 500px;
@@ -704,7 +697,7 @@ h2:after, #blog h6:after {
 .burger {
   	display: inline-block;
   	background: none;
-	margin: 10px;
+	margin: 20px;
   	cursor: pointer;
 	outline: 0;
   	border-bottom: 4px solid rgb(241, 101, 34);
@@ -809,10 +802,10 @@ h2:after, #blog h6:after {
 #blog img {
 	transition: transform 0.3s;
     width: 100%;
-	cursor: pointer;
+	
 }
 
-#blog img:hover {
+.blog:hover img {
 	-webkit-filter: blur(3px);
 	-moz-filter: blur(3px);
 	-o-filter: blur(3px);
@@ -821,43 +814,51 @@ h2:after, #blog h6:after {
 	transform: scale(1.25);	
 }
 
-.img-blog:hover:before {
-	content: "READ MORE";
-	color: #000000;
-	display: block;
-	z-index: 999;
-	position:absolute;
-	background-color: rgba(255,255,255,0.7);
-	background-size: 100%;
-}
-
-
-.img-blog {
+.blog {
 	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	
 }
 
-.show-txt {
-	position: absolute;
+.overlay {
 	opacity: 0;
-	top: 0;
-	left: 0;
-	width: 100%;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
 	height: 100%;
+  	background-color: rgba(255, 255, 255, 0.4);
+  	opacity: 0;
+	transition: 0.6s all;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
 }
 
-.show-txt:hover {
+.overlay h4 {
+	text-transform: none;
+	font-weight: 100;
+	padding-bottom: 0;
+}
+
+.blog:hover .overlay {
 	opacity: 1;
 }
 
 .clicli {
+	z-index: 999;
 	position: fixed;
 	display: none;
 	top: 20%;
 	left: 25%;
 	right: 25%;
 	background-color: #ffffff;
-	border: 5px solid rgb(241, 101, 34);
+	border: 3px solid rgb(241, 101, 34);
+	border-radius: 10px;
 	text-align: center;
+	transition: 0.3s all;
 }
 
 .close {
@@ -887,11 +888,16 @@ h2:after, #blog h6:after {
   	transform: rotate(-45deg);
 }
 
-.blog-note {
-	display: none;
-	margin-top: 20px;
-}
-
 .sl {
 	display: none;
+}
+
+.sl-t {
+	position:relative;
+	top: 30px;
+}
+
+
+.clicli img {
+	height: 60px;
 }
