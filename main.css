@@ -103,7 +103,7 @@ h2 {
 }
 
 #header {
-	background: url('black.png') no-repeat;
+	background: url('img/black.png') no-repeat;
     background-size: cover;
 	position: relative;
 }
@@ -174,7 +174,7 @@ h2 {
 	height: 600px;
     align-items: center;
     display:flex;
-	background: url(logo.png) no-repeat 0 50px;
+	background: url(img/logo.png) no-repeat 0 50px;
 }
 
 #header .col-one-two {
@@ -209,7 +209,7 @@ h2 {
 }
 
 #abouts {
-	background: url('bck_head.png') no-repeat;
+	background: url('img/bck_head.png') no-repeat;
 	background-size: cover;
     height: 500px;
 }
@@ -321,7 +321,7 @@ input[type=email], select {
     margin: 8px 0;
     padding: 12px 20px;
     width: 100%;
-    background: #ffffff url(mail.png) no-repeat 95%;
+    background: #ffffff url(img/mail.png) no-repeat 95%;
 }
 
 button {
@@ -438,7 +438,7 @@ h6 {
 
 #works {
 	height: 500px;
-	background: url(tablet.png) no-repeat bottom left;
+	background: url(img/tablet.png) no-repeat bottom left;
 	background-size: 40%;
 	background-color: rgb(36, 36, 42);	
 }
@@ -858,7 +858,7 @@ h2:after, #blog h6:after {
 	border: 3px solid rgb(241, 101, 34);
 	border-radius: 10px;
 	text-align: center;
-	transition: 0.3s all;
+	transition: 5.3s all;
 }
 
 .close {

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Freebi PSD</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="main.css?<?php echo time(); ?>">
 	<link rel="stylesheet" href="media-queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
@@ -84,39 +84,39 @@
 	<div class="container">
 		<div class="col-one-two">
 			<h2>Our Clients</h2>
-			<p class="read-more" onclick="showText('clicli')" >View all<span class="triangle"></span></p>
+			<p class="read-more" id="read-clients">View all<span class="triangle"></span></p>
 		</div>
 		<div class="col-one-two">
-			<img src="clients1.png" alt="365App">
-			<img src="clients2.png" alt="Get Licensed">
-			<img src="clients3.png" alt="Hot Jobs">
-			<img src="clients4.png" alt="UNG">
-			<img src="clients5.png" alt="Drive my safely">
-			<img src="clients6.png" alt="Toni and guy">
+			<img src="img/clients1.png" alt="365App">
+			<img src="img/clients2.png" alt="Get Licensed">
+			<img src="img/clients3.png" alt="Hot Jobs">
+			<img src="img/clients4.png" alt="UNG">
+			<img src="img/clients5.png" alt="Drive my safely">
+			<img src="img/clients6.png" alt="Toni and guy">
 		</div>
 	</div>
 	<div class="clicli">
-		<span class="close" onclick="hideText('clicli')"></span>
+		<span class="close" id="close-clients"></span>
 		<h2>Our Clients</h2>
-		<img src="clients1.png" alt="365App">
-		<img src="clients2.png" alt="Get Licensed">
-		<img src="clients3.png" alt="Hot Jobs">
-		<img src="clients4.png" alt="UNG">
-		<img src="clients5.png" alt="Drive my safely">
-		<img src="clients6.png" alt="Toni and guy">
-		<img src="clients4.png" alt="365App">
-		<img src="clients5.png" alt="Get Licensed">
-		<img src="clients6.png" alt="Hot Jobs">
-		<img src="clients3.png" alt="UNG">
-		<img src="clients2.png" alt="Drive my safely">
-		<img src="clients1.png" alt="Toni and guy">
+		<img src="img/clients1.png" alt="365App">
+		<img src="img/clients2.png" alt="Get Licensed">
+		<img src="img/clients3.png" alt="Hot Jobs">
+		<img src="img/clients4.png" alt="UNG">
+		<img src="img/clients5.png" alt="Drive my safely">
+		<img src="img/clients6.png" alt="Toni and guy">
+		<img src="img/clients4.png" alt="365App">
+		<img src="img/clients5.png" alt="Get Licensed">
+		<img src="img/clients6.png" alt="Hot Jobs">
+		<img src="img/clients3.png" alt="UNG">
+		<img src="img/clients2.png" alt="Drive my safely">
+		<img src="img/clients1.png" alt="Toni and guy">
 	</div>
 	</section>
 
 	<section id="abouts">
 		<div class="container">
 		<div class="col-one-two">
-			<img src="man.png" alt="bodyface">
+			<img src="img/man.png" alt="bodyface">
 		</div>
 		<div class="col-one-two">
 		<div class="title">
@@ -141,12 +141,12 @@
 			</div>
 			<div class="col-one-two">
 				<div class="col-one-in-two">
-					<a href=#><img src="ekran.png" alt="development"></a>
-					<a href=#><img src="samolocik.png" alt="digital marketing"></a>
+					<a href=#><img src="img/ekran.png" alt="development"></a>
+					<a href=#><img src="img/samolocik.png" alt="digital marketing"></a>
 				</div>
 				<div class="col-one-in-two">
-					<a href=#><img src="klodka.png" alt="web security"></a>
-					<a href=#><img src="suwaki.png" alt="conversion"></a>
+					<a href=#><img src="img/klodka.png" alt="web security"></a>
+					<a href=#><img src="img/suwaki.png" alt="conversion"></a>
 				</div>
 			</div>
 		</div>
@@ -176,10 +176,10 @@
 		<div class="slider-queries">
 		<div class="sliders sl">
 			<div class="col-one-three sl-t">
-				<a href="#"><img src="ON.png" alt="Opportunity Network"></a>
+				<a href="#"><img src="img/ON.png" alt="Opportunity Network"></a>
 			</div>
 			<div class="col-one-three sl-t">
-				<a href="#"><img src="ivivu.png" alt="ivivu.com"></a>
+				<a href="#"><img src="img/ivivu.png" alt="ivivu.com"></a>
 			</div>
 			<div class="col-one-three sl-t">
 				<div class="title">	<p>future<span>think</span></p>
@@ -190,10 +190,10 @@
 		</div>
 		<div class="sliders sl">
 			<div class="col-one-three sl-t">
-				<a href="#"><img src="samolocik.png" alt="Opportunity  Network"></a>
+				<a href="#"><img src="img/samolocik.png" alt="Opportunity  Network"></a>
 			</div>
 			<div class="col-one-three sl-t">
-				<a href="#"><img src="ekran.png" alt="ivivu.com"></a>
+				<a href="#"><img src="img/ekran.png" alt="ivivu.com"></a>
 			</div>
 			<div class="col-one-three sl-t">
 				<div class="title">	<p>future<span>think</span></p>
@@ -220,24 +220,24 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div class="col-one-in-two">
-				<a href=#><img src="zdrowie.png" alt="health and fitness"></a>
-				<a href=#><img src="sztucce.png" alt="food"></a>
+				<a href=#><img src="img/zdrowie.png" alt="health and fitness"></a>
+				<a href=#><img src="img/sztucce.png" alt="food"></a>
 			</div>
 			<div class="col-one-in-two">
-				<a href=#><img src="film.png" alt="film"></a>
-				<a href=#><img src="games.png" alt="games"></a>
+				<a href=#><img src="img/film.png" alt="film"></a>
+				<a href=#><img src="img/games.png" alt="games"></a>
 			</div>
 		</div>
 		<div class="col-one-two">
 			<div class="col-one-in-two">
-			<a href=#><img src="photo.png" alt="gidital marketing"></a>
-			<a href=#><img src="postac.png" alt="professional services"></a>
-			<a href=#><img src="travel.png" alt="travel and hotels"></a>
+			<a href=#><img src="img/photo.png" alt="gidital marketing"></a>
+			<a href=#><img src="img/postac.png" alt="professional services"></a>
+			<a href=#><img src="img/travel.png" alt="travel and hotels"></a>
 			</div>
 			<div class="col-one-in-two">
-			<a href=#><img src="sport.png" alt="sport"></a>
-			<a href=#><img src="lisc.png" alt="fashion"></a>
-			<p><a href="#" class="button">Show All</a></p>
+			<a href=#><img src="img/sport.png" alt="sport"></a>
+			<a href=#><img src="img/lisc.png" alt="fashion"></a>
+			<p><a href="#" class="button">Show More</a></p>
 			</div>
 		</div>
 		</div>
@@ -246,7 +246,7 @@
 	<section id="feature">
 		<div class="container">
 			<div class="col-one-two">
-				<img src="mockup.png" alt="mock up">
+				<img src="img/mockup.png" alt="mock up">
 			</div>
 			<div class="col-one-two">
 				<div class="title">
@@ -271,7 +271,7 @@
 			<div class="notes">
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="beach.png" alt="beach">
+					<img src="img/beach.png" alt="beach">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -284,7 +284,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="shoes.png" alt="shoes">
+					<img src="img/shoes.png" alt="shoes">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -297,7 +297,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="gory.png" alt="mountains">
+					<img src="img/gory.png" alt="mountains">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -312,7 +312,7 @@
 			<div class="notes">
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="gory.png" alt="mountains">
+					<img src="img/gory.png" alt="mountains">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -325,7 +325,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="beach.png" alt="beach">
+					<img src="img/beach.png" alt="beach">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -338,7 +338,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="shoes.png" alt="shoes">
+					<img src="img/shoes.png" alt="shoes">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -353,7 +353,7 @@
 			<div class="notes">
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="shoes.png" alt="shoes">
+					<img src="img/shoes.png" alt="shoes">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -366,7 +366,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="gory.png" alt="mountains">
+					<img src="img/gory.png" alt="mountains">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -379,7 +379,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="beach.png" alt="beach">
+					<img src="img/beach.png" alt="beach">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -394,7 +394,7 @@
 			<div class="notes">
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="gory.png" alt="mountains">
+					<img src="img/gory.png" alt="mountains">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -407,7 +407,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="shoes.png" alt="shoes">
+					<img src="img/shoes.png" alt="shoes">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>
@@ -420,7 +420,7 @@
 			</div>
 			<div class="col-one-three blog-note">
 				<div class="blog">
-					<img src="gory.png" alt="mountains">
+					<img src="img/gory.png" alt="mountains">
 					<div class="overlay">
 						<h3>Check this out!</h3>
 						<h4>Is there hope for the SEO profession?</h4>

@@ -90,6 +90,13 @@ function showDivs2(n) {
 }
 // ---------- CLIENTS ----------- 
 
+document.getElementById("read-clients").addEventListener("click", function(){
+	showText("clicli");
+});
+document.getElementById("close-clients").addEventListener("click", function(){
+	hideText("clicli");
+});
+
 function showText(args) {
 	var i;
 	var x = document.getElementsByClassName(args);
@@ -122,3 +129,19 @@ $(document).ready(function () {
     });*/
 });
 
+
+
+// ---------------- SCROLL ---------
+
+$(document).ready(function() { 
+	$('a[href^="#"]').on('click', function(event) {
+		var link = $( $(this).attr('href') );
+	
+		if( link.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: link.offset().top
+			}, 1000);
+		}
+	});
+});
